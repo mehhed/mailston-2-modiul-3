@@ -180,7 +180,43 @@ nav{
     line-height: 70px;
     text-align: center;
 }
+/* some fact related css  */
 
+.Some-Facts{
+    padding: 50px 250px;
+}
+.Some-Facts h1{
+    color: var(--dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+}
+.Some-Facts p{
+    color: var(--dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+}
+.Some-Facts-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 10px;
+}
+.Some-Facts-box-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    border: 1px solid goldenrod;
+    border-radius: 8px;
+}
+
+
+/* sponsor section css  */
+.sponsor{}
 /* responsive related css  */
 
 /* responsive css for midium devices  */
