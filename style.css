@@ -216,7 +216,44 @@ nav{
 
 
 /* sponsor section css  */
-.sponsor{}
+.sponsor{
+    padding: 50px 250px;
+}
+.sponsor h1{
+    color: var(--dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+}
+.sponsor p{
+    color: var(--dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px; 
+}
+.sponsor img{
+    width: 100%;
+}
+
+/* footer css  */
+footer {
+    padding: 0px 250px 120px 250px;
+}
+footer p{
+    background: #fff4e7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px 0px;
+}
+footer p{
+    color: var(--dark-02, #424242);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0px;
+}
 /* responsive related css  */
 
 /* responsive css for midium devices  */
@@ -245,6 +282,13 @@ nav{
     .Quick-list-of-Our-Features img{
         width: calc((50% - 5px));
     }
+    .Some-Facts .Some-Facts-box{
+        display: grid;
+        grid-template-areas: 
+        " grid-box-1 grid-box-2"
+        " grid-box-3 grid-box-4"
+        ;
+    }
 
 /* Features-you-will-love-&-enjoy section css */
     .Features-love-enjoy {
@@ -254,6 +298,21 @@ nav{
         padding: 50px 40px;
         box-sizing: border-box;
         gap: 100px;
+    }
+
+    .Some-Facts {
+        padding: 50px 20px;
+    }
+    .sponsor {
+        padding: 20px 59px;
+    }
+    footer {
+        padding: 0px 136px 120px 66px;
+    }
+    .sponsor .Some-Facts-box-inner{
+            padding: 0px 10px;
+            border: inherit;
+            flex-wrap: wrap;
     }
 }
 /* small deveices  */
@@ -294,5 +353,40 @@ nav{
         position: inherit;
         bottom: 0px;
         left: 0px;
+    }
+
+    .Some-Facts .Some-Facts-box{
+        display: grid;
+        grid-template-areas: 
+        " grid-box-1 "
+        "grid-box-2"
+        " grid-box-3 "
+        "grid-box-4"
+        ;
+        justify-content: space-evenly;
+    }
+    .sponsor .Some-Facts-box{
+        display: grid;
+        grid-template-areas: 
+        " grid-box-1 "
+        "grid-box-2"
+        " grid-box-3 "
+        "grid-box-4"
+        "grid-box-5"
+        ;
+        justify-content: space-evenly;
+    }
+    .S
+    .Some-Facts {
+        padding: 50px 10px;
+    }
+    .sponsor {
+        padding: 10px 10px;
+    }
+    footer {
+        padding: 0px 15px 120px 15px;
+    }
+    .Some-Facts {
+        padding: 50px 28px;
     }
 }
