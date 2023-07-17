@@ -107,7 +107,15 @@ nav{
 
 /* Features-you-will-love-&-enjoy section css */
 .Features-love-enjoy{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 240px;
+    box-sizing: border-box;
+    gap: 100px;
+}
+.Features-love-enjoy .discription, .images{
+    width:50%;
 }
 .Features-love-enjoy .discription > h1 {
     color: var(--dark-01, #131313);
@@ -118,13 +126,59 @@ nav{
     border-radius: 2px;
     padding-left: 10px;
 }
-.Features-love-enjoy .discription > p {
+.Features-love-enjoy .discription >  p {
     color: var(--dark-03, #727272);
     font-family: Work Sans;
     font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     margin: 20px 0px 40px;
+}
+.Features-love-enjoy .discription  h2 {
+    color: var(--dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 1.04rem;
+    font-weight: 600;
+}
+.Features-love-enjoy .discription  .discription-box p {
+    color: var(--dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+}
+.Features-love-enjoy .discription  .discription-box {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.Features-love-enjoy .images  img{
+    width: 100%;
+}
+.Features-love-enjoy .images  div {
+    width: 342px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #FF900E;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    left: -65px;
+}
+.Features-love-enjoy .images  div h1{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
 }
 
 /* responsive related css  */
@@ -155,6 +209,16 @@ nav{
     .Quick-list-of-Our-Features img{
         width: calc((50% - 5px));
     }
+
+/* Features-you-will-love-&-enjoy section css */
+    .Features-love-enjoy {
+        display: flex;
+        justify-content: space-between;
+        align-items: inherit;
+        padding: 50px 40px;
+        box-sizing: border-box;
+        gap: 100px;
+    }
 }
 /* small deveices  */
 @media screen and  (max-width:576px){
@@ -178,5 +242,21 @@ nav{
     .Quick-list-of-Our-Features {
         flex-direction: column-reverse;
         padding: 50px 30px;
+    }
+
+
+    .Features-love-enjoy {
+        padding: 50px 20px;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .Features-love-enjoy .discription, .images {
+        width: 100%;
+    }
+    .Features-love-enjoy .images  div {
+        width: 288px;
+        position: inherit;
+        bottom: 0px;
+        left: 0px;
     }
 }
